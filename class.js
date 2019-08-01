@@ -49,3 +49,15 @@ function convertToF(celsius) {
             }
           }
             console.log(fib(10));
+
+            function getIndexToIns(arr, num) { 
+                // Find my place in this sorted array. 
+                let res; 
+                arr.push(num);
+                 arr.sort((a,b) => { return a - b});
+                  for(let i = 0; i<arr.length; i++){
+                       if(arr[i] === num){ 
+                           res = arr.indexOf(arr[i]);
+                         } 
+                        } console.log(res); 
+                    } getIndexToIns([40, 60], 50);
