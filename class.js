@@ -61,3 +61,10 @@ function convertToF(celsius) {
                          } 
                         } console.log(res); 
                     } getIndexToIns([40, 60], 50);
+                
+                    function reverseNum(num){
+                        num = num + "";
+                        return num.split("").reverse().join("");
+                        
+                      }
+                      console.log(reverseNum(1234));
