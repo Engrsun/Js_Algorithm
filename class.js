@@ -132,6 +132,23 @@ function reverseNum(num){
                   if(num % i === 0) return false;
                 return num > 1;
               }
-              console.log(isPrime(50));
+              console.log(isPrime(2));
+
+              function typeVal(val){
+                return typeof(val);
+              }
+              console.log(typeVal(true));
+
+
+              function firstNonRepeatedCharacter(string) {
+                for (var i = 0; i < string.length; i++) {
+                  var c = string.charAt(i);
+                  if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
+                    return c;
+                  }
+                }
+                return null;
+              }
+              console.log(firstNonRepeatedCharacter('abacddbec'));
 
                
